@@ -10,7 +10,7 @@ def rescaleFrame(frame, scale = 0.75):
     dimension = (width, height)
     return cv.resize(frame, dimension, interpolation=cv.INTER_AREA)
 
-prs = os.startfile('C:/Users/user/OneDrive/Documents/UNI/SEMESTERS/SEM 1/ppapers/AP final/Electrostatics.pptx')
+prs = os.startfile('C:/Users/user/OneDrive/Documents/UNI/SEMESTERS/SEM 1/ppapers/AP final/Electrostatics.pptx')  # Add a pptx file 
 pt._handlePause(1)
 pt.press('f5')
 
@@ -40,13 +40,11 @@ while True:
         MiddleTip = lmList[12]
         curr = MiddleTip[1]
         pre = MiddleTip[2]
+        # The Below Method Only Works For Left Hand
         if curr < 200:
             pt.press('space')
-        # if curr > pre + 100:
-        #     pt.press('left')
         if pre < 200:
             pt.press('left')
-        pre = curr
 
 
         print(lmList[16])
