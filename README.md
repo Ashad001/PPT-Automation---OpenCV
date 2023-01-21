@@ -1,2 +1,2 @@
-# PPT-Automation---OpenCV
-PPT Automation using Hand Gestures using OpenCV and mediapipe
+# PPT Automation 
+PPT Automation by Hand Gestures using OpenCV and Mediapipe
